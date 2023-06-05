@@ -8,7 +8,7 @@ export default class Contact extends Component {
         <Container id='contact' className='mt-5 pt-5'>
         <Form>
             <div>
-            <h1>Contact Me</h1>
+            <h1>Message Me</h1>
             </div>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
         <Form.Label>Name</Form.Label>
@@ -23,7 +23,7 @@ export default class Contact extends Component {
         <Form.Control as="textarea" rows={3} />
       </Form.Group>
       <Button variant="primary" type="submit">
-        Submit
+        Send
       </Button>
     </Form>
     </Container>

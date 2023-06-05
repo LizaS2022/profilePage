@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import {Container,Row,Col} from 'react-bootstrap';
 
-
+const styles = {
+  profileImg:{
+    height:"100px",
+    width: "100px",
+    borderRadius: "50%",
+  }
+}
 
 export default class About extends Component {
   render() {
@@ -12,7 +18,7 @@ export default class About extends Component {
             <h1>About Me</h1>
             <Row>
                 <Col md={2}>
-                    <img className='profileImg' src={process.env.PUBLIC_URL + './profile.jpg'}  alt="Profile" />
+                    <img style={styles.profileImg} src={process.env.PUBLIC_URL + './profile.jpg'}  alt="Profile" />
                 </Col>
                 <Col md={0}>
                     <p>

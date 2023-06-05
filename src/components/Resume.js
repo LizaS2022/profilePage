@@ -1,38 +1,61 @@
 
 import React, { Component } from 'react'
 import Skills from "./skills.js";
-import {Container} from 'react-bootstrap'
+import {Row,Col,Card,Container} from 'react-bootstrap'
 
+const styles ={
+list: {
+  listStyleType: "none",
+},
+skill: {
+lineHeight:"2",
+}
+}
 export default class Resume extends Component {
   render() {
     return (
         <Container id='resume' className='mt-5 pt-5'>
-      <div>
-        <h1>Resume</h1>
-        <a href="/samplePDF.pdf" download>
-            <span>Download Resume</span>
-        </a>
-        
-        <h2>Front-end Proficiencies</h2>
-        <ul>
-            {Skills.map((skill, index) => (
-                skill.frontendSkills.map((frontendSkill, skillIndex) =>(
-                    <li key={skillIndex}>{frontendSkill}</li>
-                ))
-            ))}
+          <Row className="justify-content-md-center text-center">
+            <Col md={8}>
+              <h1>Resume</h1>
+              <a href="/samplePDF.pdf" download>
+              <span>Download Resume</span>
+              </a>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col md={6}>
+              <Card className="mb-4">
+                <Card.Body>
+                  <Card.Title>Front-end Proficiencies</Card.Title>
+                  <ul className='list' style={styles.list}>
+                    {Skills.map((skill, index) => (
+                      skill.frontendSkills.map((frontendSkill, skillIndex) =>(
+                        <li className='skill' style={styles.skill} key={skillIndex}>{frontendSkill}</li>
+                      ))
+                    ))}
             
-        </ul>
+                  </ul>
+                </Card.Body>
+              </Card>
+            </Col>
 
-        <h2>Back-end Proficiencies</h2>
-        <ul>
-            {Skills.map((skill, index) => (
-                skill.backendSkills.map((backendSkill, skillIndex)=>(
-                    <li key={skillIndex}>{backendSkill}</li>
-                ))
-            ))}
-        </ul>
-
-      </div>
+            <Col md={6}>
+              <Card>
+                <Card.Body>
+                    <Card.Title>Back-end Proficiencies</Card.Title>
+                      <ul className='list' style={styles.list}>
+                          {Skills.map((skill, index) => (
+                              skill.backendSkills.map((backendSkill, skillIndex)=>(
+                                <li className='skill' style={styles.skill} key={skillIndex}>{backendSkill}</li>
+                              ))
+                           ))}
+                      </ul>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
       </Container>
     )
   }
