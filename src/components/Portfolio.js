@@ -8,7 +8,7 @@ import {Container, Row, Col} from 'react-bootstrap'
 export default function Portfolio (){
     return (
       <div>
-        <Container id='portfolio'>
+        <Container id='portfolio' className='mt-5 pt-5'>
             <Row>
                 {Projects.map((project) => (
                     <Col xs={12} md={6} lg={3} key={project.id}>

@@ -12,14 +12,3 @@ code {
     monospace;
 }
 
-.profileImg {
-  height:100px;
-  width: 100px;
-  border-radius: 50%;
-}
-
-.herokuImg {
-  width: 20px;
-  height: 20px;
-}
-

@@ -5,8 +5,11 @@ export default class Contact extends Component {
   render() {
     return (
       <div>
-        <Container id='contact'>
+        <Container id='contact' className='mt-5 pt-5'>
         <Form>
+            <div>
+            <h1>Contact Me</h1>
+            </div>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
         <Form.Label>Name</Form.Label>
         <Form.Control type="name" placeholder="John Smith" />

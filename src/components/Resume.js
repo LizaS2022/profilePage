@@ -6,7 +6,7 @@ import {Container} from 'react-bootstrap'
 export default class Resume extends Component {
   render() {
     return (
-        <Container id='resume'>
+        <Container id='resume' className='mt-5 pt-5'>
       <div>
         <h1>Resume</h1>
         <a href="/samplePDF.pdf" download>
