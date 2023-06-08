@@ -16,7 +16,7 @@ export default class Resume extends Component {
     return (
         <Container id='resume' className='mt-5 pt-5'>
           <Row className="justify-content-md-center text-center">
-            <Col md={8}>
+            <Col md={6}>
               <h1>Resume</h1>
               <a href="/samplePDF.pdf" download>
               <span>Download Resume</span>
