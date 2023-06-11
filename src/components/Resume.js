@@ -9,7 +9,7 @@ list: {
 },
 skill: {
 lineHeight:"2",
-}
+},
 }
 export default class Resume extends Component {
   render() {
@@ -19,7 +19,7 @@ export default class Resume extends Component {
             <Col md={6}>
               <h1>Resume</h1>
               <a href="/samplePDF.pdf" download>
-              <span>Download Resume</span>
+              <span className='download'>Download Resume</span>
               </a>
             </Col>
           </Row>
