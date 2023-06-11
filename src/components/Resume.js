@@ -10,9 +10,7 @@ list: {
 skill: {
   lineHeight:"2",
 },
-download: {
-  paddingBottom:"3",
-}
+
 
 }
 export default class Resume extends Component {
@@ -23,7 +21,7 @@ export default class Resume extends Component {
             <Col md={6}>
               <h1>Resume</h1>
               <a href="/samplePDF.pdf" download>
-              <span className='download' style={styles.download}>Download Resume</span>
+              <span className="mb-3">Download Resume</span>
               </a>
             </Col>
           </Row>
