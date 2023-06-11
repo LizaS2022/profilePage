@@ -8,11 +8,12 @@ list: {
   listStyleType: "none",
 },
 skill: {
-lineHeight:"2",
+  lineHeight:"2",
 },
 download: {
-  marginBottom: "2",
+  paddingBottom:"3",
 }
+
 }
 export default class Resume extends Component {
   render() {
