@@ -10,6 +10,9 @@ list: {
 skill: {
 lineHeight:"2",
 },
+download: {
+  marginBottom: "2",
+}
 }
 export default class Resume extends Component {
   render() {
